@@ -120,7 +120,7 @@ os_check(){
     fi
     
     if [ "$lsb_dist" =  "ubuntu" ]; then
-        if  [ "$dist_version" != "20.04" ]; then
+        if  [ "$dist_version" != "22.04" ]; then
             output "Unsupported Ubuntu version. Only Ubuntu 20.04 is supported."
             exit 2
         fi
@@ -158,7 +158,7 @@ os_check(){
         output "Unsupported operating system."
         output ""
         output "Supported OS:"
-        output "Ubuntu: 20.04"
+        output "Ubuntu: 22.04"
         output "Debian: 11"
         output "Fedora: 35"
         output "CentOS Stream: 8"
