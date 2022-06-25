@@ -121,7 +121,7 @@ os_check(){
     
     if [ "$lsb_dist" =  "ubuntu" ]; then
         if  [ "$dist_version" != "22.04" ]; then
-            output "Unsupported Ubuntu version. Only Ubuntu 20.04 is supported."
+            output "Unsupported Ubuntu version. Only Ubuntu 22.04 is supported."
             exit 2
         fi
     elif [ "$lsb_dist" = "debian" ]; then
